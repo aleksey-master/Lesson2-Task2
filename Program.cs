@@ -10,18 +10,9 @@ int Prompt(string message)
 
 int number = new Random().Next(10, 1000);
 System.Console.WriteLine($"Случайное трехзначное число = {number}");
-//int number3 = numberA % 10;
-//int number2 = numberA / 10 % 10;
-//int number1 = numberA / 100 % 10;
-int i = 0;
-while (number > 0)
-{
-    int a = number % 10;
-    if (max < a)
-        max = a;
-        number = number / 10;
-i++;
-}
+int number3 = number % 10;
+int number2 = number / 10 % 10;
+int number1 = number / 100 % 10;
 
 System.Console.WriteLine($"Число с удаленной второй цифрой = {number1}{number3}");
 
